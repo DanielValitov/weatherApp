@@ -1,0 +1,29 @@
+.cardContainer{
+    background: rgb(143,214,255);
+    background: linear-gradient(225deg, rgba(143,214,255,1) 17%, rgba(158,255,243,1) 50%, rgba(21,160,240,1) 96%);
+    background-size: 300% 300%;
+    animation: color 7s ease-in infinite;
+    padding: 50px;
+    border-radius: 10px;
+}
+.infoContainer{
+    overflow: hidden;
+    transition: 1s;
+}
+.infoContainerHidden {
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+    display: none;
+}
+@keyframes color {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
